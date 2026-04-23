@@ -665,17 +665,17 @@ footer {
 }
 
 /* ════════════════════════════════════════════════
-   REDUCE MOVIMIENTO — Accesibilidad
+   ANIMACIONES DE ENTRADA — Header, Info banner, Filtros
    ════════════════════════════════════════════════ */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  html { scroll-behavior: auto; }
-  .card { opacity: 1; transform: none; }
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
+
+header        { animation: slideDown 0.5s 0.05s both; }
+.info-banner  { animation: fadeUp 0.6s 0.5s both; }
+.filter-bar   { animation: fadeUp 0.6s 0.6s both; }
+.section-header { animation: fadeUp 0.6s 0.65s both; }
 
 /* ════════════════════════════════════════════════
    UTILIDADES
