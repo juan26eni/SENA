@@ -11,26 +11,42 @@
 </head>
 <body>
 
-  <!-- ── HEADER ──────────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════
+       HEADER — Logo + Título institucional
+       ══════════════════════════════════════════════ -->
   <header>
     <div class="header-inner">
-      <div class="logo-area">
-        <div class="logo-mark">
-          <!-- Leaf SVG icon as SENA placeholder -->
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6 2 2 8 2 14c0 4 2.5 6.5 6 7.5C9 19 9.5 16 12 14c2.5 2 3 5 4 7.5C19.5 20.5 22 18 22 14c0-6-4-12-10-12z"/>
-          </svg>
+
+      <!-- Marca institucional: logo + texto -->
+      <div class="header-brand">
+        <div class="logo-slot">
+          <!-- Logo SENA: reemplaza el src con la ruta real de tu imagen -->
+          <img src="/IMG/LOGOS SENA.png" alt="Logo SENA" class="logo-img" />
+          <!-- Fallback si no carga la imagen -->
+          <div class="logo-fallback" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" fill="#728156" opacity="0.15"/>
+              <path d="M10 26 Q15 14 20 20 Q25 26 30 14" stroke="#728156" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <circle cx="20" cy="12" r="3.5" fill="#728156"/>
+            </svg>
+          </div>
         </div>
-        <div class="logo-text">
-          <span>SENA</span>
-          <small>Oferta Cultural</small>
+        <div class="header-brand-text">
+          <span class="header-brand-title">Bienestar del Aprendiz</span>
+          <span class="header-brand-sub">Centro de Diseño y Metrología</span>
         </div>
       </div>
-      <div class="header-badge">2026 — Inscripciones abiertas</div>
+
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        2026 — Inscripciones abiertas
+      </div>
     </div>
   </header>
 
-  <!-- ── HERO ────────────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════
+       HERO
+       ══════════════════════════════════════════════ -->
   <section class="hero">
     <div class="hero-decoration a"></div>
     <div class="hero-decoration b"></div>
@@ -55,20 +71,80 @@
     </div>
   </section>
 
-  <!-- ── INFO BANNER ─────────────────────────────── -->
-  <div class="info-banner">
-    <div class="info-banner-inner">
-      <div class="info-banner-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      </div>
-      <div class="info-banner-text">
-        <h3>¿Cómo inscribirme?</h3>
-        <p>Haz clic en el botón <strong style="color:var(--c5)">"Inscribirse"</strong> de cada taller para acceder al formulario de Microsoft Forms correspondiente. Completa el formulario con tus datos y listo.</p>
+  <!-- ══════════════════════════════════════════════
+       REQUERIMIENTOS
+       ══════════════════════════════════════════════ -->
+  <div class="requisitos-banner">
+    <div class="requisitos-inner">
+      <h3 class="requisitos-title">Requerimientos para participar</h3>
+      <div class="requisitos-grid">
+        <div class="requisito-item">
+          <div class="requisito-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Completamente Gratuitos</strong>
+            <p>Sin ningún costo para aprendices y funcionarios SENA.</p>
+          </div>
+        </div>
+        <div class="requisito-item">
+          <div class="requisito-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Disponibilidad de Tiempo</strong>
+            <p>Asistencia regular según el horario del taller elegido.</p>
+          </div>
+        </div>
+        <div class="requisito-item">
+          <div class="requisito-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Talleres Continuos</strong>
+            <p>Participación constante durante todo el semestre.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- ── FILTER BAR ──────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════
+       CÓMO INSCRIBIRSE — WhatsApp
+       ══════════════════════════════════════════════ -->
+  <div class="info-banner">
+    <div class="info-banner-inner">
+      <div class="info-banner-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+      </div>
+      <div class="info-banner-text">
+        <h3>¿Cómo inscribirme?</h3>
+        <p>Es muy sencillo. Únete al grupo de WhatsApp de Bienestar SENA para recibir toda la información sobre los talleres y confirmar tu cupo.</p>
+      </div>
+      <a href="URL_WHATSAPP_GRUPO_AQUI"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-whatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.057 23.03a.75.75 0 0 0 .914.914l5.17-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.951-1.355l-.355-.212-3.677 1.05 1.068-3.565-.232-.367A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+        </svg>
+        Unirse al grupo de WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       FILTROS — Solo 2 sedes
+       ══════════════════════════════════════════════ -->
   <div class="filter-bar">
     <span class="filter-label">Filtrar por sede:</span>
     <button class="filter-btn active" data-filter="all">Todos</button>
@@ -77,18 +153,30 @@
     <button class="filter-btn" data-filter="virtual">Virtual</button>
   </div>
 
-  <!-- ── SECTION HEADER ──────────────────────────── -->
+  <!-- ══════════════════════════════════════════════
+       ENCABEZADO SECCIÓN
+       ══════════════════════════════════════════════ -->
   <div class="section-header">
     <h2>Talleres disponibles</h2>
-    <p>Selecciona el taller de tu interés y completa el formulario de inscripción.</p>
+    <p>Selecciona el taller de tu interés e inscríbete por WhatsApp.</p>
   </div>
 
-  <!-- ── MAIN CONTENT ────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════
+       TARJETAS DE TALLERES
+       ══════════════════════════════════════════════ -->
   <main class="main-content">
     <div class="cards-grid" id="cardsGrid">
 
-      <!-- Card 1: Grupo Teatro Paloquemao -->
+      <!-- ── Card 1: Grupo Teatro Paloquemao ── -->
       <article class="card" data-sede="paloquemao" style="--card-color: #728156">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzNhNDIyOCIvPgogIDwhLS0gU3RhZ2UgZmxvb3IgLS0+CiAgPHJlY3QgeD0iMCIgeT0iMTcwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjMmEzMTFhIi8+CiAgPCEtLSBGbG9vciBsaW5lIC0tPgogIDxsaW5lIHgxPSIwIiB5MT0iMTcwIiB4Mj0iNDAwIiB5Mj0iMTcwIiBzdHJva2U9IiM3MjgxNTYiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPCEtLSBMZWZ0IGN1cnRhaW4gLS0+CiAgPHBhdGggZD0iTTAgMCBRNjAgMzAgNDAgODAgUTIwIDEzMCA1MCAxNzAgTDAgMTcwIFoiIGZpbGw9IiM1YTNhMmEiLz4KICA8cGF0aCBkPSJNMCAwIFE1MCAyMCAzMCA3MCBRMTAgMTIwIDQwIDE3MCBMMCAxNzAgWiIgZmlsbD0iIzZiNDUzNSIvPgogIDwhLS0gUmlnaHQgY3VydGFpbiAtLT4KICA8cGF0aCBkPSJNNDAwIDAgUTM0MCAzMCAzNjAgODAgUTM4MCAxMzAgMzUwIDE3MCBMNDAwIDE3MCBaIiBmaWxsPSIjNWEzYTJhIi8+CiAgPHBhdGggZD0iTTQwMCAwIFEzNTAgMjAgMzcwIDcwIFEzOTAgMTIwIDM2MCAxNzAgTDQwMCAxNzAgWiIgZmlsbD0iIzZiNDUzNSIvPgogIDwhLS0gU3RhZ2UgbGlnaHQgYmVhbSBsZWZ0IC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMTIwLDAgODAsMCAxNDAsMTcwIDE2MCwxNzAiIGZpbGw9IiM3MjgxNTYiIG9wYWNpdHk9IjAuMTIiLz4KICA8IS0tIFN0YWdlIGxpZ2h0IGJlYW0gcmlnaHQgLS0+CiAgPHBvbHlnb24gcG9pbnRzPSIyODAsMCAzMjAsMCAyNjAsMTcwIDI0MCwxNzAiIGZpbGw9IiM3MjgxNTYiIG9wYWNpdHk9IjAuMTIiLz4KICA8IS0tIENvbWVkeSBtYXNrIC0tPgogIDxlbGxpcHNlIGN4PSIxNTUiIGN5PSI5NSIgcng9IjM4IiByeT0iNDIiIGZpbGw9IiNlOGQ1YTAiIHN0cm9rZT0iI2I4YTA2MCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTQ0IiBjeT0iODYiIHJ4PSI3IiByeT0iNSIgZmlsbD0iIzNhNDIyOCIvPgogIDxlbGxpcHNlIGN4PSIxNjYiIGN5PSI4NiIgcng9IjciIHJ5PSI1IiBmaWxsPSIjM2E0MjI4Ii8+CiAgPHBhdGggZD0iTTE0MCAxMDggUTE1NSAxMjAgMTcwIDEwOCIgc3Ryb2tlPSIjM2E0MjI4IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGVsbGlwc2UgY3g9IjE0OCIgY3k9IjEwNSIgcng9IjQiIHJ5PSIzIiBmaWxsPSIjZDQ4OTZhIiBvcGFjaXR5PSIwLjYiLz4KICA8ZWxsaXBzZSBjeD0iMTYyIiBjeT0iMTA1IiByeD0iNCIgcnk9IjMiIGZpbGw9IiNkNDg5NmEiIG9wYWNpdHk9IjAuNiIvPgogIDwhLS0gVHJhZ2VkeSBtYXNrIC0tPgogIDxlbGxpcHNlIGN4PSIyNDUiIGN5PSIxMDAiIHJ4PSIzOCIgcnk9IjQyIiBmaWxsPSIjYzhkNWU4IiBzdHJva2U9IiM4MDkwYTgiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGVsbGlwc2UgY3g9IjIzNCIgY3k9Ijg5IiByeD0iNyIgcnk9IjUiIGZpbGw9IiMzYTQyMjgiLz4KICA8ZWxsaXBzZSBjeD0iMjU2IiBjeT0iODkiIHJ4PSI3IiByeT0iNSIgZmlsbD0iIzNhNDIyOCIvPgogIDxwYXRoIGQ9Ik0yMzAgMTEzIFEyNDUgMTAzIDI2MCAxMTMiIHN0cm9rZT0iIzNhNDIyOCIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gU3RhcnMgLS0+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjUiIHI9IjIiIGZpbGw9IiNlOGQ1YTAiIG9wYWNpdHk9IjAuOCIvPgogIDxjaXJjbGUgY3g9IjE3MCIgY3k9IjE1IiByPSIxLjUiIGZpbGw9IiNlOGQ1YTAiIG9wYWNpdHk9IjAuNiIvPgogIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjE4IiByPSIxLjUiIGZpbGw9IiNlOGQ1YTAiIG9wYWNpdHk9IjAuNiIvPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjEwIiByPSIxIiBmaWxsPSIjZThkNWEwIiBvcGFjaXR5PSIwLjUiLz4KPC9zdmc+" alt="Teatro Paloquemao" class="card-img" />
+          <!-- Reemplaza src="" con la ruta de tu imagen alusiva al teatro -->
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6s1.5-2 5-2 5 2 5 2v14s-1.5-1-5-1-5 1-5 1V6z"/><path d="M12 6s1.5-2 5-2 5 2 5 2v14s-1.5-1-5-1-5 1-5 1V6z"/></svg>
+            <span>Teatro</span>
+          </div>
+        </div>
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -98,27 +186,30 @@
           <h2>Grupo Teatro Paloquemao</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Lunes y miércoles de 12 a 2 pm</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Paloquemao</span>
             </div>
           </div>
-          <a href="URL_FORMS_TEATRO_PALOQUEMAO" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <a href="https://chat.whatsapp.com/JlCkML2D0o8ESwYIMf7yhe?mode=gi_t" target="_blank" rel="noopener noreferrer" class="btn-inscripcion btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.057 23.03a.75.75 0 0 0 .914.914l5.17-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.951-1.355l-.355-.212-3.677 1.05 1.068-3.565-.232-.367A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Inscribirse por WhatsApp
           </a>
         </div>
       </article>
 
-      <!-- Card 2: Improvisación Teatral -->
+      <!-- ── Card 2: Improvisación Teatral ── -->
       <article class="card" data-sede="paloquemao" style="--card-color: #88976C">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzFlMmExYSIvPgogIDwhLS0gRmxvb3IgLS0+CiAgPHJlY3QgeD0iMCIgeT0iMTc1IiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQ1IiBmaWxsPSIjMTYxZjEyIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIxNzUiIHgyPSI0MDAiIHkyPSIxNzUiIHN0cm9rZT0iIzcyODE1NiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPCEtLSBTcG90bGlnaHQgY29uZSAtLT4KICA8cG9seWdvbiBwb2ludHM9IjIwMCwwIDEyMCwxNzUgMjgwLDE3NSIgZmlsbD0iIzcyODE1NiIgb3BhY2l0eT0iMC4xOCIvPgogIDxwb2x5Z29uIHBvaW50cz0iMjAwLDAgMTQwLDE3NSAyNjAsMTc1IiBmaWxsPSIjZDRiODYwIiBvcGFjaXR5PSIwLjEyIi8+CiAgPCEtLSBTcG90bGlnaHQgc291cmNlIC0tPgogIDxlbGxpcHNlIGN4PSIyMDAiIGN5PSI4IiByeD0iMjIiIHJ5PSIxMCIgZmlsbD0iI2Q0Yjg2MCIgb3BhY2l0eT0iMC45Ii8+CiAgPGVsbGlwc2UgY3g9IjIwMCIgY3k9IjgiIHJ4PSIxNCIgcnk9IjYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuNyIvPgogIDwhLS0gUGVyc29uIHNpbGhvdWV0dGUgLSBhcm1zIHNwcmVhZCAoaW1wcm92aXNpbmcpIC0tPgogIDwhLS0gQm9keSAtLT4KICA8cmVjdCB4PSIxOTAiIHk9IjExMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjQ1IiByeD0iNCIgZmlsbD0iIzJkM2EyMCIvPgogIDwhLS0gSGVhZCAtLT4KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSI5OCIgcj0iMTQiIGZpbGw9IiMyZDNhMjAiLz4KICA8IS0tIExlZnQgYXJtIHJhaXNlZCAtLT4KICA8cGF0aCBkPSJNMTkwIDEyMCBRMTYwIDk1IDE0NSA3NSIgc3Ryb2tlPSIjMmQzYTIwIiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgogIDwhLS0gUmlnaHQgYXJtIHJhaXNlZCAtLT4KICA8cGF0aCBkPSJNMjEwIDEyMCBRMjQwIDk1IDI1NSA3NSIgc3Ryb2tlPSIjMmQzYTIwIiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgogIDwhLS0gTGVmdCBsZWcgLS0+CiAgPHBhdGggZD0iTTE5NCAxNTUgUTE4NSAxNjggMTgwIDE3NSIgc3Ryb2tlPSIjMmQzYTIwIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgogIDwhLS0gUmlnaHQgbGVnIC0tPgogIDxwYXRoIGQ9Ik0yMDYgMTU1IFEyMTUgMTY4IDIyMCAxNzUiIHN0cm9rZT0iIzJkM2EyMCIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8IS0tIFNwZWVjaCBidWJibGUgLS0+CiAgPHBhdGggZD0iTTIyNSA3MCBRMjY1IDU1IDI2NSA4MCBRMjY1IDEwNSAyMzUgMTAwIFEyMjAgMTAwIDIxNSA5NSBaIiBmaWxsPSIjNzI4MTU2IiBvcGFjaXR5PSIwLjg1Ii8+CiAgPHRleHQgeD0iMjQwIiB5PSI4MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIj4hPC90ZXh0PgogIDwhLS0gU3BhcmtsZXMgLS0+CiAgPGxpbmUgeDE9IjE1NSIgeTE9IjEzMCIgeDI9IjE2NSIgeTI9IjEyMCIgc3Ryb2tlPSIjZDRiODYwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjE2MCIgeTE9IjEyNSIgeDI9IjE1MCIgeTI9IjEyNSIgc3Ryb2tlPSIjZDRiODYwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjEzMCIgeDI9IjI1MCIgeTI9IjEyMCIgc3Ryb2tlPSIjZDRiODYwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjI0NSIgeTE9IjEyNSIgeDI9IjI0NSIgeTI9IjEzNSIgc3Ryb2tlPSIjZDRiODYwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC43Ii8+Cjwvc3ZnPg==" alt="Improvisación Teatral" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <span>Teatro · Impro</span>
+          </div>
+        </div>
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -128,27 +219,30 @@
           <h2>Improvisación Teatral</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Viernes de 9 am a 11 am</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Paloquemao</span>
             </div>
           </div>
-          <a href="URL_FORMS_IMPROVISACION" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <a href="https://chat.whatsapp.com/LcFBjaaHYuKAzRbaDB5GQq?mode=gi_t" target="_blank" rel="noopener noreferrer" class="btn-inscripcion btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.057 23.03a.75.75 0 0 0 .914.914l5.17-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.951-1.355l-.355-.212-3.677 1.05 1.068-3.565-.232-.367A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Inscribirse por WhatsApp
           </a>
         </div>
       </article>
 
-      <!-- Card 3: Yoga -->
+      <!-- ── Card 3: Yoga ── -->
       <article class="card" data-sede="paloquemao" style="--card-color: #728156">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iI2U4ZjRkYyIvPgogIDwhLS0gU2t5IGdyYWRpZW50IGhpbGxzIC0tPgogIDxlbGxpcHNlIGN4PSIxMDAiIGN5PSIyMDAiIHJ4PSIxNjAiIHJ5PSI3MCIgZmlsbD0iI2M4ZTBiMCIgb3BhY2l0eT0iMC42Ii8+CiAgPGVsbGlwc2UgY3g9IjMyMCIgY3k9IjIxMCIgcng9IjE0MCIgcnk9IjYwIiBmaWxsPSIjYjZjYzljIiBvcGFjaXR5PSIwLjUiLz4KICA8IS0tIFN1biAtLT4KICA8Y2lyY2xlIGN4PSIzMzAiIGN5PSI1NSIgcj0iMjgiIGZpbGw9IiNmMGMwNjAiIG9wYWNpdHk9IjAuODUiLz4KICA8IS0tIFN1biByYXlzIC0tPgogIDxnIHN0cm9rZT0iI2YwYzA2MCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjYiPgogICAgPGxpbmUgeDE9IjMzMCIgeTE9IjE1IiB4Mj0iMzMwIiB5Mj0iNSIvPgogICAgPGxpbmUgeDE9IjMzMCIgeTE9Ijk1IiB4Mj0iMzMwIiB5Mj0iMTA1Ii8+CiAgICA8bGluZSB4MT0iMjkwIiB5MT0iNTUiIHgyPSIyODAiIHkyPSI1NSIvPgogICAgPGxpbmUgeDE9IjM3MCIgeTE9IjU1IiB4Mj0iMzgwIiB5Mj0iNTUiLz4KICAgIDxsaW5lIHgxPSIzMDIiIHkxPSIyNyIgeDI9IjI5NSIgeTI9IjIwIi8+CiAgICA8bGluZSB4MT0iMzU4IiB5MT0iODMiIHgyPSIzNjUiIHkyPSI5MCIvPgogICAgPGxpbmUgeDE9IjM1OCIgeTE9IjI3IiB4Mj0iMzY1IiB5Mj0iMjAiLz4KICAgIDxsaW5lIHgxPSIzMDIiIHkxPSI4MyIgeDI9IjI5NSIgeTI9IjkwIi8+CiAgPC9nPgogIDwhLS0gWW9nYSBtYXQgLS0+CiAgPHJlY3QgeD0iODAiIHk9IjE1NSIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIxNCIgcng9IjciIGZpbGw9IiM3MjgxNTYiIG9wYWNpdHk9IjAuNyIvPgogIDwhLS0gWW9nYSBmaWd1cmUgLSB0cmVlIHBvc2UgLS0+CiAgPCEtLSBTdGFuZGluZyBsZWcgLS0+CiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1NSIgeDI9IjIwMCIgeTI9IjEyNSIgc3Ryb2tlPSIjNGE1ZTM1IiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gQmVudCBsZWcgLS0+CiAgPHBhdGggZD0iTTIwMCAxNDAgUTIyMCAxNDUgMjI1IDEzMCIgc3Ryb2tlPSIjNGE1ZTM1IiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgogIDwhLS0gVG9yc28gLS0+CiAgPGxpbmUgeDE9IjIwMCIgeTE9IjEyNSIgeDI9IjIwMCIgeTI9Ijg1IiBzdHJva2U9IiM0YTVlMzUiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPCEtLSBBcm1zIHJhaXNlZCBpbiBuYW1hc3RlIC0tPgogIDxwYXRoIGQ9Ik0yMDAgMTAwIFExNzUgODAgMTcwIDY1IiBzdHJva2U9IiM0YTVlMzUiIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTIwMCAxMDAgUTIyNSA4MCAyMzAgNjUiIHN0cm9rZT0iIzRhNWUzNSIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8IS0tIEhhbmRzIG1lZXRpbmcgLS0+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iNjAiIHI9IjgiIGZpbGw9IiM0YTVlMzUiLz4KICA8IS0tIEhlYWQgLS0+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iNzUiIHI9IjEzIiBmaWxsPSIjNWE3MDQwIi8+CiAgPCEtLSBMZWF2ZXMvbmF0dXJlIC0tPgogIDxlbGxpcHNlIGN4PSI2MCIgY3k9IjE0MCIgcng9IjE4IiByeT0iMjUiIGZpbGw9IiM4YWFhNWEiIG9wYWNpdHk9IjAuNyIvPgogIDxlbGxpcHNlIGN4PSI1MCIgY3k9IjEzMCIgcng9IjEyIiByeT0iMjAiIGZpbGw9IiM3MjgxNTYiIG9wYWNpdHk9IjAuNiIvPgogIDxlbGxpcHNlIGN4PSIzNDAiIGN5PSIxMzUiIHJ4PSIxOCIgcnk9IjI1IiBmaWxsPSIjOGFhYTVhIiBvcGFjaXR5PSIwLjciLz4KICA8ZWxsaXBzZSBjeD0iMzUwIiBjeT0iMTI1IiByeD0iMTIiIHJ5PSIyMCIgZmlsbD0iIzcyODE1NiIgb3BhY2l0eT0iMC42Ii8+Cjwvc3ZnPg==" alt="Yoga" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a5 5 0 1 0 0-0.001"/><circle cx="12" cy="5" r="2"/><path d="M5 20c0-3 3-6 7-6s7 3 7 6"/><path d="M3 14c1-1 2-1 3 0s2 1 3 0"/><path d="M15 14c1-1 2-1 3 0s2 1 3 0"/></svg>
+            <span>Bienestar · Yoga</span>
+          </div>
+        </div>
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -158,27 +252,30 @@
           <h2>Yoga</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Martes de 9 am a 11 am</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Paloquemao</span>
             </div>
           </div>
-          <a href="URL_FORMS_YOGA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <a href="https://chat.whatsapp.com/L3aNUCYH1X59o9L7ZJhO9Q?mode=gi_t" target="_blank" rel="noopener noreferrer" class="btn-inscripcion btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.057 23.03a.75.75 0 0 0 .914.914l5.17-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.951-1.355l-.355-.212-3.677 1.05 1.068-3.565-.232-.367A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Inscribirse por WhatsApp
           </a>
         </div>
       </article>
 
-      <!-- Card 4: Marionetas y Teatro Físico -->
+      <!-- ── Card 4: Marionetas y Teatro Físico ── -->
       <article class="card" data-sede="paloquemao" style="--card-color: #88976C">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzJhMWUzYSIvPgogIDwhLS0gV29vZCBjb250cm9sIGJhciAtLT4KICA8cmVjdCB4PSIxMjAiIHk9IjE1IiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjEwIiByeD0iNCIgZmlsbD0iIzhiNjA0MCIvPgogIDxyZWN0IHg9IjE5NSIgeT0iMTAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIyMCIgcng9IjIiIGZpbGw9IiM2YjRhMzAiLz4KICA8IS0tIFN0cmluZ3MgZnJvbSBjb250cm9sIGJhciAtLT4KICA8bGluZSB4MT0iMTQwIiB5MT0iMjUiIHgyPSIxNzUiIHkyPSI5MCIgc3Ryb2tlPSIjYzhiODk4IiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjE3NSIgeTE9IjI1IiB4Mj0iMTg1IiB5Mj0iOTAiIHN0cm9rZT0iI2M4Yjg5OCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIyMjUiIHkxPSIyNSIgeDI9IjIxNSIgeTI9IjkwIiBzdHJva2U9IiNjOGI4OTgiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjciLz4KICA8bGluZSB4MT0iMjYwIiB5MT0iMjUiIHgyPSIyMjUiIHkyPSI5MCIgc3Ryb2tlPSIjYzhiODk4IiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjIwMCIgeTE9IjI1IiB4Mj0iMjAwIiB5Mj0iODAiIHN0cm9rZT0iI2M4Yjg5OCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuNyIvPgogIDwhLS0gUHVwcGV0IGJvZHkgLS0+CiAgPHJlY3QgeD0iMTg1IiB5PSI5MCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjQwIiByeD0iNiIgZmlsbD0iI2U4YTA1MCIvPgogIDwhLS0gUHVwcGV0IGhlYWQgLS0+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iNzgiIHI9IjE4IiBmaWxsPSIjZjBjMDkwIi8+CiAgPCEtLSBQdXBwZXQgZmFjZSAtLT4KICA8Y2lyY2xlIGN4PSIxOTMiIGN5PSI3NCIgcj0iMyIgZmlsbD0iIzNhMmExYSIvPgogIDxjaXJjbGUgY3g9IjIwNyIgY3k9Ijc0IiByPSIzIiBmaWxsPSIjM2EyYTFhIi8+CiAgPHBhdGggZD0iTTE5MyA4MyBRMjAwIDkwIDIwNyA4MyIgc3Ryb2tlPSIjM2EyYTFhIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gUHVwcGV0IGhhaXIgLS0+CiAgPHBhdGggZD0iTTE4MiA2OCBRMjAwIDU4IDIxOCA2OCIgc3Ryb2tlPSIjYTA2MDMwIiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gTGVmdCBhcm0gLS0+CiAgPHBhdGggZD0iTTE4NSAxMDAgUTE2NSAxMTAgMTYwIDEyNSIgc3Ryb2tlPSIjZThhMDUwIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgogIDwhLS0gUmlnaHQgYXJtIChyYWlzZWQpIC0tPgogIDxwYXRoIGQ9Ik0yMTUgMTAwIFEyMzUgOTAgMjQwIDc1IiBzdHJva2U9IiNlOGEwNTAiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPCEtLSBMZWZ0IGxlZyAtLT4KICA8cGF0aCBkPSJNMTkwIDEzMCBRMTgwIDE1NSAxNzUgMTcwIiBzdHJva2U9IiM2MDgwNTAiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPCEtLSBSaWdodCBsZWcgKGtpY2tlZCkgLS0+CiAgPHBhdGggZD0iTTIxMCAxMzAgUTIzMCAxNTAgMjQ1IDE2MCIgc3Ryb2tlPSIjNjA4MDUwIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgogIDwhLS0gU2hvZXMgLS0+CiAgPGVsbGlwc2UgY3g9IjE3NCIgY3k9IjE3MiIgcng9IjEwIiByeT0iNiIgZmlsbD0iIzNhMmExYSIvPgogIDxlbGxpcHNlIGN4PSIyNDciIGN5PSIxNjIiIHJ4PSIxMCIgcnk9IjYiIGZpbGw9IiMzYTJhMWEiLz4KICA8IS0tIFN0YXJzIGJnIC0tPgogIDxjaXJjbGUgY3g9IjgwIiBjeT0iNDAiIHI9IjIiIGZpbGw9IiNlOGM4NzAiIG9wYWNpdHk9IjAuNSIvPgogIDxjaXJjbGUgY3g9IjMyMCIgY3k9IjMwIiByPSIxLjUiIGZpbGw9IiNlOGM4NzAiIG9wYWNpdHk9IjAuNSIvPgogIDxjaXJjbGUgY3g9IjM1MCIgY3k9IjgwIiByPSIxLjUiIGZpbGw9IiNlOGM4NzAiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iOTAiIHI9IjEiIGZpbGw9IiNlOGM4NzAiIG9wYWNpdHk9IjAuNCIvPgo8L3N2Zz4=" alt="Marionetas y Teatro Físico" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="5" r="2"/><line x1="12" y1="7" x2="12" y2="13"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="12" y1="13" x2="9" y2="18"/><line x1="12" y1="13" x2="15" y2="18"/></svg>
+            <span>Teatro · Títeres</span>
+          </div>
+        </div>
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -188,27 +285,30 @@
           <h2>Marionetas y Teatro Físico</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Martes y jueves de 4 pm a 6 pm</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Paloquemao</span>
             </div>
           </div>
-          <a href="URL_FORMS_MARIONETAS_TEATRO" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <a href="https://chat.whatsapp.com/Bjo0dRyTV6SGrJjRtiS3H3?mode=gi_t" target="_blank" rel="noopener noreferrer" class="btn-inscripcion btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.057 23.03a.75.75 0 0 0 .914.914l5.17-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.951-1.355l-.355-.212-3.677 1.05 1.068-3.565-.232-.367A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Inscribirse por WhatsApp
           </a>
         </div>
       </article>
 
-      <!-- Card 5: Marionetas -->
+      <!-- ── Card 5: Marionetas ── -->
       <article class="card" data-sede="unihorizonte" style="--card-color: #728156">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzFhMjUzMCIvPgogIDwhLS0gQmFja2dyb3VuZCBjdXJ0YWluIGhpbnRzIC0tPgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI3MCIgaGVpZ2h0PSIyMjAiIGZpbGw9IiMyYTFhMjAiIG9wYWNpdHk9IjAuNiIvPgogIDxyZWN0IHg9IjMzMCIgeT0iMCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzJhMWEyMCIgb3BhY2l0eT0iMC42Ii8+CiAgPCEtLSBDb250cm9sIGNyb3NzL2JhciAtLT4KICA8cmVjdCB4PSIxNTAiIHk9IjEyIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjgiIHJ4PSIzIiBmaWxsPSIjYzhhODcwIi8+CiAgPHJlY3QgeD0iMTk2IiB5PSI4IiB3aWR0aD0iOCIgaGVpZ2h0PSIyNSIgcng9IjIiIGZpbGw9IiNhODg1NTAiLz4KICA8IS0tIFN0cmluZ3MgLS0+CiAgPGxpbmUgeDE9IjE2MCIgeTE9IjIwIiB4Mj0iMTc4IiB5Mj0iODUiIHN0cm9rZT0iI2Q0YzA5MCIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjYiLz4KICA8bGluZSB4MT0iMjQwIiB5MT0iMjAiIHgyPSIyMjIiIHkyPSI4NSIgc3Ryb2tlPSIjZDRjMDkwIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuNiIvPgogIDxsaW5lIHgxPSIyMDAiIHkxPSIzMyIgeDI9IjIwMCIgeTI9Ijc1IiBzdHJva2U9IiNkNGMwOTAiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC42Ii8+CiAgPGxpbmUgeDE9IjE2MCIgeTE9IjIwIiB4Mj0iMTc1IiB5Mj0iMTMwIiBzdHJva2U9IiNkNGMwOTAiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC41Ii8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjIwIiB4Mj0iMjI1IiB5Mj0iMTMwIiBzdHJva2U9IiNkNGMwOTAiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC41Ii8+CiAgPCEtLSBQdXBwZXQgLSBqZXN0ZXIgc3R5bGUgLS0+CiAgPCEtLSBIZWFkIC0tPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjcyIiByPSIyMCIgZmlsbD0iI2U4Yzg5MCIvPgogIDwhLS0gSmVzdGVyIGhhdCAtLT4KICA8cGF0aCBkPSJNMTgwIDYwIFExOTAgNDAgMjAwIDUyIFEyMTAgMzUgMjIwIDU1IFEyMjUgNDggMjMwIDYwIiBmaWxsPSIjODA1MGEwIiBzdHJva2U9IiM2MDQwODAyIiBzdHJva2Utd2lkdGg9IjAiLz4KICA8Y2lyY2xlIGN4PSIxOTAiIGN5PSI0NCIgcj0iNSIgZmlsbD0iI2U4YjAzMCIvPgogIDxjaXJjbGUgY3g9IjIxMCIgY3k9IjM4IiByPSI1IiBmaWxsPSIjZThiMDMwIi8+CiAgPGNpcmNsZSBjeD0iMjI4IiBjeT0iNTQiIHI9IjQiIGZpbGw9IiNlOGIwMzAiLz4KICA8IS0tIEZhY2UgLS0+CiAgPGNpcmNsZSBjeD0iMTkzIiBjeT0iNjkiIHI9IjMuNSIgZmlsbD0iIzNhMmExYSIvPgogIDxjaXJjbGUgY3g9IjIwNyIgY3k9IjY5IiByPSIzLjUiIGZpbGw9IiMzYTJhMWEiLz4KICA8cGF0aCBkPSJNMTkyIDgwIFEyMDAgODcgMjA4IDgwIiBzdHJva2U9IiMzYTJhMWEiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGVsbGlwc2UgY3g9IjE5MyIgY3k9Ijc3IiByeD0iNCIgcnk9IjMiIGZpbGw9IiNlODkwN2EiIG9wYWNpdHk9IjAuNiIvPgogIDxlbGxpcHNlIGN4PSIyMDciIGN5PSI3NyIgcng9IjQiIHJ5PSIzIiBmaWxsPSIjZTg5MDdhIiBvcGFjaXR5PSIwLjYiLz4KICA8IS0tIEJvZHkgLS0+CiAgPHBhdGggZD0iTTE4NSA5MiBRMTc1IDEwNSAxODUgMTMwIEwyMTUgMTMwIFEyMjUgMTA1IDIxNSA5MiBaIiBmaWxsPSIjODA1MGEwIi8+CiAgPCEtLSBEaWFtb25kIHBhdHRlcm4gb24gYm9keSAtLT4KICA8cGF0aCBkPSJNMTg1IDEwOCBMMjAwIDk4IEwyMTUgMTA4IEwyMDAgMTE4IFoiIGZpbGw9IiNlOGIwMzAiIG9wYWNpdHk9IjAuNiIvPgogIDwhLS0gQXJtcyAtLT4KICA8cGF0aCBkPSJNMTg1IDEwMCBRMTYyIDEwNSAxNTUgMTIwIiBzdHJva2U9IiM4MDUwYTAiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTIxNSAxMDAgUTIzOCA5NSAyNDggMTA4IiBzdHJva2U9IiM4MDUwYTAiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPCEtLSBMZWdzIC0tPgogIDxwYXRoIGQ9Ik0xOTIgMTMwIFExODUgMTU1IDE3OCAxNzAiIHN0cm9rZT0iI2U4YjAzMCIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNMjA4IDEzMCBRMjE1IDE1NSAyMjIgMTcwIiBzdHJva2U9IiM4MDUwYTAiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==" alt="Marionetas" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="4" r="2"/><path d="M10 8 Q6 10 7 15 Q8 18 12 18 Q16 18 17 15 Q18 10 14 8 Z"/><line x1="7" y1="15" x2="5" y2="21"/><line x1="17" y1="15" x2="19" y2="21"/></svg>
+            <span>Marionetas</span>
+          </div>
+        </div>
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -218,57 +318,30 @@
           <h2>Marionetas</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Lunes y miércoles de 5 pm a 6 pm</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Unihorizonte</span>
             </div>
           </div>
-          <a href="URL_FORMS_MARIONETAS" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <a href="https://chat.whatsapp.com/G9GgIQqdK1IIKQjaa1cJ1Z?mode=gi_t" target="_blank" rel="noopener noreferrer" class="btn-inscripcion btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.057 23.03a.75.75 0 0 0 .914.914l5.17-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.951-1.355l-.355-.212-3.677 1.05 1.068-3.565-.232-.367A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Inscribirse por WhatsApp
           </a>
         </div>
       </article>
 
-      <!-- Card 6: Escritura Creativa -->
-      <article class="card" data-sede="virtual" style="--card-color: #88976C">
-        <div class="card-accent"></div>
-        <div class="card-body">
-          <div class="card-category">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
-            Virtual · Escritura
+      <!-- ── Card 6: Cine y Audiovisuales ── -->
+      <article class="card" data-sede="unihorizonte" style="--card-color: #88976C">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzBhMGYxNCIvPgogIDwhLS0gRmlsbSBzdHJpcCB0b3AgLS0+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMCIgZmlsbD0iIzFhMjUzMCIvPgogIDxyZWN0IHg9IjgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIzOCIgeT0iNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGYxNCIvPgogIDxyZWN0IHg9IjY4IiB5PSI1IiB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjMGEwZjE0Ii8+CiAgPHJlY3QgeD0iOTgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIxMjgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIxNTgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIxODgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIyMTgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIyNDgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIyNzgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIzMDgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIzMzgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIzNjgiIHk9IjUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8IS0tIEZpbG0gc3RyaXAgYm90dG9tIC0tPgogIDxyZWN0IHg9IjAiIHk9IjE5MCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMCIgZmlsbD0iIzFhMjUzMCIvPgogIDxyZWN0IHg9IjgiIHk9IjE5NSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGYxNCIvPgogIDxyZWN0IHg9IjM4IiB5PSIxOTUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSI2OCIgeT0iMTk1IiB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjMGEwZjE0Ii8+CiAgPHJlY3QgeD0iOTgiIHk9IjE5NSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGYxNCIvPgogIDxyZWN0IHg9IjEyOCIgeT0iMTk1IiB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjMGEwZjE0Ii8+CiAgPHJlY3QgeD0iMTU4IiB5PSIxOTUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIxODgiIHk9IjE5NSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGYxNCIvPgogIDxyZWN0IHg9IjIxOCIgeT0iMTk1IiB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjMGEwZjE0Ii8+CiAgPHJlY3QgeD0iMjQ4IiB5PSIxOTUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIyNzgiIHk9IjE5NSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGYxNCIvPgogIDxyZWN0IHg9IjMwOCIgeT0iMTk1IiB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjMGEwZjE0Ii8+CiAgPHJlY3QgeD0iMzM4IiB5PSIxOTUiIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiMwYTBmMTQiLz4KICA8cmVjdCB4PSIzNjgiIHk9IjE5NSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iIzBhMGYxNCIvPgogIDwhLS0gQ2FtZXJhIGJvZHkgLS0+CiAgPHJlY3QgeD0iMTEwIiB5PSI3MCIgd2lkdGg9IjEzMCIgaGVpZ2h0PSI5MCIgcng9IjEwIiBmaWxsPSIjMjUzMDQwIi8+CiAgPHJlY3QgeD0iMTE1IiB5PSI3NSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI4MCIgcng9IjgiIGZpbGw9IiMxZTJhMzgiLz4KICA8IS0tIExlbnMgLS0+CiAgPGNpcmNsZSBjeD0iMTc1IiBjeT0iMTE1IiByPSIzMiIgZmlsbD0iIzBhMGYxNCIvPgogIDxjaXJjbGUgY3g9IjE3NSIgY3k9IjExNSIgcj0iMjYiIGZpbGw9IiMxNTIwMzAiLz4KICA8Y2lyY2xlIGN4PSIxNzUiIGN5PSIxMTUiIHI9IjE4IiBmaWxsPSIjMWEyYzQwIi8+CiAgPGNpcmNsZSBjeD0iMTc1IiBjeT0iMTE1IiByPSIxMCIgZmlsbD0iIzg4YThjOCIgb3BhY2l0eT0iMC40Ii8+CiAgPGNpcmNsZSBjeD0iMTY5IiBjeT0iMTA5IiByPSI0IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC4yNSIvPgogIDwhLS0gTGVucyByaW5nIC0tPgogIDxjaXJjbGUgY3g9IjE3NSIgY3k9IjExNSIgcj0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzQwNTA2MCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPCEtLSBWaWV3ZmluZGVyIC0tPgogIDxyZWN0IHg9IjIyMCIgeT0iNzgiIHdpZHRoPSIzMCIgaGVpZ2h0PSIyMCIgcng9IjQiIGZpbGw9IiMxYTI1MzAiLz4KICA8IS0tIFJlZWwgY2lyY2xlcyAtLT4KICA8Y2lyY2xlIGN4PSIxMjUiIGN5PSI4OCIgcj0iMTQiIGZpbGw9IiMwYTBmMTQiIHN0cm9rZT0iIzQwNTA2MCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPGNpcmNsZSBjeD0iMTI1IiBjeT0iODgiIHI9IjYiIGZpbGw9IiMyNTMwNDAiLz4KICA8Y2lyY2xlIGN4PSIyMzAiIGN5PSI4OCIgcj0iMTQiIGZpbGw9IiMwYTBmMTQiIHN0cm9rZT0iIzQwNTA2MCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPGNpcmNsZSBjeD0iMjMwIiBjeT0iODgiIHI9IjYiIGZpbGw9IiMyNTMwNDAiLz4KICA8IS0tIFJlZCByZWNvcmQgbGlnaHQgLS0+CiAgPGNpcmNsZSBjeD0iMjM4IiBjeT0iMTQ4IiByPSI1IiBmaWxsPSIjZTgzMDMwIiBvcGFjaXR5PSIwLjkiLz4KPC9zdmc+" alt="Cine y Audiovisuales" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+            <span>Cine · Audiovisual</span>
           </div>
-          <h2>Escritura Creativa</h2>
-          <div class="card-meta">
-            <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
-              <span><span class="meta-label">Horario:</span>Martes y jueves de 9 am a 11 am</span>
-            </div>
-            <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              </div>
-              <span><span class="meta-label">Modalidad:</span>Virtual</span>
-            </div>
-          </div>
-          <a href="URL_FORMS_ESCRITURA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
         </div>
-      </article>
-
-      <!-- Card 7: Cine y Audiovisuales -->
-      <article class="card" data-sede="unihorizonte" style="--card-color: #728156">
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -278,27 +351,30 @@
           <h2>Cine y Audiovisuales</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Lunes y miércoles de 1 pm a 3 pm</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Unihorizonte</span>
             </div>
           </div>
-          <a href="URL_FORMS_CINE" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <a href="https://chat.whatsapp.com/LLZ66wgDsi6Boo2Jr4Zyiq?mode=gi_t" target="_blank" rel="noopener noreferrer" class="btn-inscripcion btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.859L.057 23.03a.75.75 0 0 0 .914.914l5.17-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.951-1.355l-.355-.212-3.677 1.05 1.068-3.565-.232-.367A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Inscribirse por WhatsApp
           </a>
         </div>
       </article>
 
-      <!-- Card 8: Danza Urbana -->
-      <article class="card" data-sede="paloquemao" style="--card-color: #88976C">
+      <!-- ── Card 7: Danza Urbana ── -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #728156">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzFhMWEyZSIvPgogIDwhLS0gVXJiYW4gYnJpY2sgd2FsbCBiZyAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzFlMWUzMCIvPgogIDxnIG9wYWNpdHk9IjAuMTIiIHN0cm9rZT0iIzgwODBiMCIgc3Ryb2tlLXdpZHRoPSIwLjUiPgogICAgPGxpbmUgeDE9IjAiIHkxPSIzMCIgeDI9IjQwMCIgeTI9IjMwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjYwIiB4Mj0iNDAwIiB5Mj0iNjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iOTAiIHgyPSI0MDAiIHkyPSI5MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIxMjAiIHgyPSI0MDAiIHkyPSIxMjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMTUwIiB4Mj0iNDAwIiB5Mj0iMTUwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjE4MCIgeDI9IjQwMCIgeTI9IjE4MCIvPgogIDwvZz4KICA8IS0tIEdyb3VuZCAtLT4KICA8cmVjdCB4PSIwIiB5PSIxODUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMzUiIGZpbGw9IiMxNDE0MjAiLz4KICA8bGluZSB4MT0iMCIgeTE9IjE4NSIgeDI9IjQwMCIgeTI9IjE4NSIgc3Ryb2tlPSIjNjA2MGEwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDwhLS0gTW90aW9uIGxpbmVzL2VuZXJneSAtLT4KICA8cGF0aCBkPSJNODAgMTAwIFExNDAgNjAgMTYwIDEyMCIgc3Ryb2tlPSIjZTA0MGEwIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwzIi8+CiAgPHBhdGggZD0iTTMyMCAxMDAgUTI2MCA2MCAyNDAgMTIwIiBzdHJva2U9IiM0MGEwZTAiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC41IiBzdHJva2UtZGFzaGFycmF5PSI0LDMiLz4KICA8IS0tIERhbmNlciAtIGJyZWFrZGFuY2UgZnJlZXplIHBvc2UgLS0+CiAgPCEtLSBMZWZ0IGFybSBwbGFudGVkIChzdXBwb3J0KSAtLT4KICA8bGluZSB4MT0iMTU1IiB5MT0iMTM1IiB4Mj0iMTg1IiB5Mj0iMTEwIiBzdHJva2U9IiNlOGM4NzAiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPCEtLSBCb2R5IHRpbHRlZCAtLT4KICA8cmVjdCB4PSIxODMiIHk9Ijk1IiB3aWR0aD0iMjIiIGhlaWdodD0iMzgiIHJ4PSI1IiBmaWxsPSIjZThjODcwIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjAsIDE5NCwgMTE0KSIvPgogIDwhLS0gSGVhZCAtLT4KICA8Y2lyY2xlIGN4PSIxOTQiIGN5PSI4OCIgcj0iMTYiIGZpbGw9IiNlOGM4NzAiLz4KICA8IS0tIENhcCAtLT4KICA8cGF0aCBkPSJNMTc4IDg0IFExOTQgNzIgMjEwIDg0IiBmaWxsPSIjNDA0MGQwIiBzdHJva2U9Im5vbmUiLz4KICA8cmVjdCB4PSIxNzUiIHk9IjgyIiB3aWR0aD0iMzgiIGhlaWdodD0iNyIgcng9IjMiIGZpbGw9IiM1MDUwZTAiLz4KICA8cmVjdCB4PSIyMDUiIHk9IjgwIiB3aWR0aD0iMTgiIGhlaWdodD0iNiIgcng9IjIiIGZpbGw9IiMzMDMwYzAiLz4KICA8IS0tIEZhY2UgLS0+CiAgPGNpcmNsZSBjeD0iMTg4IiBjeT0iODkiIHI9IjMiIGZpbGw9IiMzYTJhMWEiLz4KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSI4OSIgcj0iMyIgZmlsbD0iIzNhMmExYSIvPgogIDxwYXRoIGQ9Ik0xODYgOTYgUTE5NCAxMDAgMjAyIDk2IiBzdHJva2U9IiMzYTJhMWEiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIExlZ3Mgc3ByZWFkIGluIGZyZWV6ZSAtLT4KICA8cGF0aCBkPSJNMTk0IDEzMyBRMjIwIDE0OCAyNDAgMTQwIiBzdHJva2U9IiM0MDQwZDAiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTE5NCAxMzMgUTE3NSAxNTUgMTY1IDE3MCIgc3Ryb2tlPSIjZThjODcwIiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPgogIDwhLS0gUmlnaHQgYXJtIG91dCAtLT4KICA8cGF0aCBkPSJNMjA1IDEwOCBRMjM1IDk1IDI1NSAxMDUiIHN0cm9rZT0iI2U4Yzg3MCIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz4KICA8IS0tIFNuZWFrZXIgLS0+CiAgPGVsbGlwc2UgY3g9IjI0MiIgY3k9IjE0MSIgcng9IjEyIiByeT0iNyIgZmlsbD0iI2YwZjBmMCIvPgogIDxlbGxpcHNlIGN4PSIxNjUiIGN5PSIxNzMiIHJ4PSIxMSIgcnk9IjYiIGZpbGw9IiNmMGYwZjAiLz4KICA8IS0tIE11c2ljIG5vdGVzIC0tPgogIDx0ZXh0IHg9IjI5NSIgeT0iODAiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNlMDQwYTAiIG9wYWNpdHk9IjAuNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiPuKZqjwvdGV4dD4KICA8dGV4dCB4PSI2MCIgeT0iNzAiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0MGEwZTAiIG9wYWNpdHk9IjAuNiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiPuKZqzwvdGV4dD4KICA8dGV4dCB4PSIzMzAiIHk9IjEzMCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2U4Yzg3MCIgb3BhY2l0eT0iMC41IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+4pmpPC90ZXh0Pgo8L3N2Zz4=" alt="Danza Urbana" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="4" r="2"/><path d="M9 12 L6 21"/><path d="M15 12 L18 21"/><path d="M8 8 Q12 14 16 8"/><path d="M10 14 L14 14"/></svg>
+            <span>Danza Urbana</span>
+          </div>
+        </div>
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -308,27 +384,30 @@
           <h2>Danza Urbana</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Martes, jueves y viernes de 2 a 5 pm</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Paloquemao</span>
             </div>
           </div>
-          <a href="URL_FORMS_DANZA_URBANA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <button class="btn-inscripcion btn-pending" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Próximamente
+          </button>
         </div>
       </article>
 
-      <!-- Card 9: Danza Folclórica -->
-      <article class="card" data-sede="paloquemao" style="--card-color: #728156">
+      <!-- ── Card 8: Danza Folclórica ── -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #88976C">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iI2Y1ZThkMCIvPgogIDwhLS0gRGVjb3JhdGl2ZSBiYWNrZ3JvdW5kIGNpcmNsZXMgLS0+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSI2MCIgcj0iODAiIGZpbGw9IiNlOGM4NzAiIG9wYWNpdHk9IjAuMTUiLz4KICA8Y2lyY2xlIGN4PSIzNjAiIGN5PSIxNjAiIHI9IjkwIiBmaWxsPSIjZDA2MDQwIiBvcGFjaXR5PSIwLjEyIi8+CiAgPCEtLSBGbG9vciAtLT4KICA8cmVjdCB4PSIwIiB5PSIxODUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMzUiIGZpbGw9IiNjOGE4NjAiIG9wYWNpdHk9IjAuNCIvPgogIDxsaW5lIHgxPSIwIiB5MT0iMTg1IiB4Mj0iNDAwIiB5Mj0iMTg1IiBzdHJva2U9IiNhMDgwNDAiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPCEtLSBEZWNvcmF0aXZlIGZsb29yIHBhdHRlcm4gLS0+CiAgPGcgc3Ryb2tlPSIjYTA4MDQwIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuNCI+CiAgICA8bGluZSB4MT0iMCIgeTE9IjE5NSIgeDI9IjQwMCIgeTI9IjE5NSIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIyMDUiIHgyPSI0MDAiIHkyPSIyMDUiLz4KICA8L2c+CiAgPCEtLSBTa2lydCAod2lkZSwgc3Bpbm5pbmcpIC0tPgogIDxwYXRoIGQ9Ik0xNzUgMTQwIFExMjAgMTU1IDgwIDE4NSBRMTAwIDE4OCAxNDAgMTg1IFExNzAgMTgyIDIwMCAxODUgUTIzMCAxODIgMjYwIDE4NSBRMzAwIDE4OCAzMjAgMTg1IFEyODAgMTU1IDIyNSAxNDAgWiIgZmlsbD0iI2QwNDAzMCIvPgogIDxwYXRoIGQ9Ik0xNzggMTQwIFExMzAgMTUzIDk1IDE4MiBRMTMwIDE3NSAxNjAgMTgwIFExODUgMTgzIDIwMCAxODIgUTIxNSAxODMgMjQwIDE4MCBRMjcwIDE3NSAzMDUgMTgyIFEyNzAgMTUzIDIyMiAxNDAgWiIgZmlsbD0iI2U4YjAzMCIgb3BhY2l0eT0iMC44Ii8+CiAgPCEtLSBTa2lydCBpbm5lciBsYXllciAtLT4KICA8cGF0aCBkPSJNMTgzIDE0MCBRMTU1IDE1MiAxMzUgMTc1IFExNjUgMTcwIDIwMCAxNzIgUTIzNSAxNzAgMjY1IDE3NSBRMjQ1IDE1MiAyMTcgMTQwIFoiIGZpbGw9IiNmMGM4NTAiIG9wYWNpdHk9IjAuNiIvPgogIDwhLS0gQm9keSAtLT4KICA8cmVjdCB4PSIxODYiIHk9Ijk1IiB3aWR0aD0iMjgiIGhlaWdodD0iNDgiIHJ4PSI1IiBmaWxsPSIjZThjMDkwIi8+CiAgPCEtLSBUcmFkaXRpb25hbCBibG91c2UgLS0+CiAgPHJlY3QgeD0iMTgzIiB5PSIxMDAiIHdpZHRoPSIzNCIgaGVpZ2h0PSI0MCIgcng9IjUiIGZpbGw9IiNjODMwMzAiLz4KICA8IS0tIEJsb3VzZSB0cmltIC0tPgogIDxwYXRoIGQ9Ik0xODMgMTAwIFEyMDAgOTMgMjE3IDEwMCIgZmlsbD0iI2U4YjAzMCIgc3Ryb2tlPSIjZThiMDMwIiBzdHJva2Utd2lkdGg9IjAiLz4KICA8bGluZSB4MT0iMTgzIiB5MT0iMTA4IiB4Mj0iMjE3IiB5Mj0iMTA4IiBzdHJva2U9IiNlOGIwMzAiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPCEtLSBIZWFkIC0tPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjgyIiByPSIxOCIgZmlsbD0iI2Q0YTA2MCIvPgogIDwhLS0gSGFpciAtLT4KICA8cGF0aCBkPSJNMTgyIDc4IFEyMDAgNjUgMjE4IDc4IFEyMTggNzAgMjE1IDY1IFEyMDAgNTggMTg1IDY1IFoiIGZpbGw9IiMzYTIwMTAiLz4KICA8IS0tIEhhaXIgYnVuIHdpdGggZmxvd2VyIC0tPgogIDxjaXJjbGUgY3g9IjIwNSIgY3k9IjY0IiByPSI4IiBmaWxsPSIjM2EyMDEwIi8+CiAgPGNpcmNsZSBjeD0iMjA1IiBjeT0iNjQiIHI9IjUiIGZpbGw9IiNlODQwNTAiLz4KICA8Y2lyY2xlIGN4PSIyMDUiIGN5PSI2NCIgcj0iMiIgZmlsbD0iI2YwYzAzMCIvPgogIDwhLS0gRmFjZSAtLT4KICA8Y2lyY2xlIGN4PSIxOTQiIGN5PSI4MiIgcj0iMyIgZmlsbD0iIzNhMjAxMCIvPgogIDxjaXJjbGUgY3g9IjIwNiIgY3k9IjgyIiByPSIzIiBmaWxsPSIjM2EyMDEwIi8+CiAgPHBhdGggZD0iTTE5MyA5MCBRMjAwIDk1IDIwNyA5MCIgc3Ryb2tlPSIjM2EyMDEwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGVsbGlwc2UgY3g9IjE5MiIgY3k9Ijg4IiByeD0iNCIgcnk9IjMiIGZpbGw9IiNlODkwNzAiIG9wYWNpdHk9IjAuNSIvPgogIDxlbGxpcHNlIGN4PSIyMDgiIGN5PSI4OCIgcng9IjQiIHJ5PSIzIiBmaWxsPSIjZTg5MDcwIiBvcGFjaXR5PSIwLjUiLz4KICA8IS0tIEFybXMgc3ByZWFkIGRhbmNpbmcgLS0+CiAgPHBhdGggZD0iTTE4MyAxMTUgUTE1NSAxMDUgMTQwIDk1IiBzdHJva2U9IiNlOGMwOTAiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTIxNyAxMTUgUTI0NSAxMDUgMjYwIDk1IiBzdHJva2U9IiNlOGMwOTAiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPCEtLSBIYW5kcyB3aXRoIGNhc3RhbmV0cyBoaW50IC0tPgogIDxjaXJjbGUgY3g9IjEzOCIgY3k9Ijk0IiByPSI3IiBmaWxsPSIjM2EyMDEwIi8+CiAgPGNpcmNsZSBjeD0iMjYyIiBjeT0iOTQiIHI9IjciIGZpbGw9IiMzYTIwMTAiLz4KICA8IS0tIE1vdGlvbiBkb3RzIC0tPgogIDxjaXJjbGUgY3g9IjkwIiBjeT0iMTU1IiByPSI0IiBmaWxsPSIjZDA0MDMwIiBvcGFjaXR5PSIwLjUiLz4KICA8Y2lyY2xlIGN4PSI3OCIgY3k9IjE0NSIgcj0iMyIgZmlsbD0iI2U4YjAzMCIgb3BhY2l0eT0iMC40Ii8+CiAgPGNpcmNsZSBjeD0iMzEwIiBjeT0iMTU1IiByPSI0IiBmaWxsPSIjZDA0MDMwIiBvcGFjaXR5PSIwLjUiLz4KICA8Y2lyY2xlIGN4PSIzMjIiIGN5PSIxNDUiIHI9IjMiIGZpbGw9IiNlOGIwMzAiIG9wYWNpdHk9IjAuNCIvPgo8L3N2Zz4=" alt="Danza Folclórica" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 C9 5 6 7 6 11 C6 15 9 17 12 17 C15 17 18 15 18 11 C18 7 15 5 12 2 Z"/><path d="M9 17 L7 22"/><path d="M15 17 L17 22"/></svg>
+            <span>Danza Folclórica</span>
+          </div>
+        </div>
         <div class="card-accent"></div>
         <div class="card-body">
           <div class="card-category">
@@ -338,29 +417,93 @@
           <h2>Danza Folclórica</h2>
           <div class="card-meta">
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
               <span><span class="meta-label">Horario:</span>Miércoles de 2 a 3 pm</span>
             </div>
             <div class="meta-row">
-              <div class="meta-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
               <span><span class="meta-label">Sede:</span>Paloquemao</span>
             </div>
           </div>
-          <a href="URL_FORMS_DANZA_FOLCLORICA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
-            Inscribirse
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <button class="btn-inscripcion btn-pending" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Próximamente
+          </button>
+        </div>
+      </article>
+
+            <!-- ── Card 9: Escritura Creativa ── -->
+      <article class="card" data-sede="virtual" style="--card-color: #728156">
+        <div class="card-image-slot">
+          <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iIzFlMjgzOCIvPgogIDwhLS0gU2NyZWVuIGdsb3cgZm9yIHZpcnR1YWwgY2xhc3MgLS0+CiAgPHJlY3QgeD0iNjAiIHk9IjMwIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE3NSIgcng9IjE0IiBmaWxsPSIjMjQzMDUwIiBzdHJva2U9IiMzMDYwYTAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjgiLz4KICA8cmVjdCB4PSI3MCIgeT0iNDAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTU1IiByeD0iMTAiIGZpbGw9IiMxYzI4NDAiLz4KICA8IS0tIFNjcmVlbiBzaGluZSAtLT4KICA8cmVjdCB4PSI3MCIgeT0iNDAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMzAiIHJ4PSIxMCIgZmlsbD0iIzJhM2E1YSIgb3BhY2l0eT0iMC41Ii8+CiAgPCEtLSBPcGVuIGJvb2sgb24gc2NyZWVuIC0tPgogIDxyZWN0IHg9IjEwMCIgeT0iNzAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTE1IiByeD0iNiIgZmlsbD0iI2Y1ZWFkOCIvPgogIDwhLS0gQm9vayBzcGluZSAtLT4KICA8bGluZSB4MT0iMjAwIiB5MT0iNzAiIHgyPSIyMDAiIHkyPSIxODUiIHN0cm9rZT0iI2M4YTg3MCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPCEtLSBMZWZ0IHBhZ2UgbGluZXMgLS0+CiAgPGxpbmUgeDE9IjExNSIgeTE9IjkwIiB4Mj0iMTg4IiB5Mj0iOTAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIxMTUiIHkxPSIxMDAiIHgyPSIxODgiIHkyPSIxMDAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIxMTUiIHkxPSIxMTAiIHgyPSIxODgiIHkyPSIxMTAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIxMTUiIHkxPSIxMjAiIHgyPSIxODgiIHkyPSIxMjAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIxMTUiIHkxPSIxMzAiIHgyPSIxNzUiIHkyPSIxMzAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIxMTUiIHkxPSIxNDAiIHgyPSIxODAiIHkyPSIxNDAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIxMTUiIHkxPSIxNTAiIHgyPSIxNzAiIHkyPSIxNTAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDxsaW5lIHgxPSIxMTUiIHkxPSIxNjAiIHgyPSIxODUiIHkyPSIxNjAiIHN0cm9rZT0iI2MwYTg4MCIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNyIvPgogIDwhLS0gUmlnaHQgcGFnZSBsaW5lcyAtLT4KICA8bGluZSB4MT0iMjEyIiB5MT0iOTAiIHgyPSIyODUiIHkyPSI5MCIgc3Ryb2tlPSIjYzBhODgwIiBzdHJva2Utd2lkdGg9IjEuMiIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjIxMiIgeTE9IjEwMCIgeDI9IjI4NSIgeTI9IjEwMCIgc3Ryb2tlPSIjYzBhODgwIiBzdHJva2Utd2lkdGg9IjEuMiIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjIxMiIgeTE9IjExMCIgeDI9IjI4NSIgeTI9IjExMCIgc3Ryb2tlPSIjYzBhODgwIiBzdHJva2Utd2lkdGg9IjEuMiIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjIxMiIgeTE9IjEyMCIgeDI9IjI4MCIgeTI9IjEyMCIgc3Ryb2tlPSIjYzBhODgwIiBzdHJva2Utd2lkdGg9IjEuMiIgb3BhY2l0eT0iMC43Ii8+CiAgPGxpbmUgeDE9IjIxMiIgeTE9IjEzMCIgeDI9IjI4NSIgeTI9IjEzMCIgc3Ryb2tlPSIjYzBhODgwIiBzdHJva2Utd2lkdGg9IjEuMiIgb3BhY2l0eT0iMC43Ii8+CiAgPCEtLSBRdWlsbCBwZW4gLS0+CiAgPHBhdGggZD0iTTI3MCA3NSBRMzAwIDU1IDI5NSA4NSBRMjg1IDgwIDI4MCA5NSBRMjcwIDg4IDI2MCAxMDAgUTI2OCA5MCAyNzAgNzUgWiIgZmlsbD0iI2YwZThjOCIvPgogIDxwYXRoIGQ9Ik0yNzAgNzUgUTI5NSA2MCAyODUgODggUTI3OCA4MiAyNzAgOTUiIGZpbGw9IiNkNGMwOTgiIG9wYWNpdHk9IjAuNiIvPgogIDxsaW5lIHgxPSIyNzAiIHkxPSI3NSIgeDI9IjI1NSIgeTI9IjEwNSIgc3Ryb2tlPSIjODA2MDQwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDwhLS0gQ3Vyc29yIGJsaW5rIG9uIHBhZ2UgLS0+CiAgPHJlY3QgeD0iMjEyIiB5PSIxNDgiIHdpZHRoPSIyIiBoZWlnaHQ9IjE2IiByeD0iMSIgZmlsbD0iIzRhOGZkOCIgb3BhY2l0eT0iMC45Ii8+CiAgPCEtLSBXaWZpL3ZpcnR1YWwgc3ltYm9sIC0tPgogIDxnIG9wYWNpdHk9IjAuNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUyLCAxOTMpIj4KICAgIDxwYXRoIGQ9Ik0tMTggMCBRMCAtMTUgMTggMCIgc3Ryb2tlPSIjNGE4ZmQ4IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNLTExIDUgUTAgLTQgMTEgNSIgc3Ryb2tlPSIjNGE4ZmQ4IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8Y2lyY2xlIGN4PSIwIiBjeT0iMTAiIHI9IjMiIGZpbGw9IiM0YThmZDgiLz4KICA8L2c+Cjwvc3ZnPg==" alt="Escritura Creativa" class="card-img" />
+          <div class="card-image-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            <span>Escritura</span>
+          </div>
+        </div>
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Escritura
+          </div>
+          <h2>Escritura Creativa</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+              <span><span class="meta-label">Horario:</span>Martes y jueves de 9 am a 11 am</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <span><span class="meta-label">Modalidad:</span>Virtual</span>
+            </div>
+          </div>
+          <button class="btn-inscripcion btn-pending" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Próximamente
+          </button>
         </div>
       </article>
 
     </div><!-- /.cards-grid -->
   </main>
 
-  <!-- ── FOOTER ───────────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN DE CONTACTO
+       ══════════════════════════════════════════════ -->
+  <section class="contacto-section">
+    <div class="contacto-inner">
+      <div class="contacto-text">
+        <h2>¿Tienes alguna pregunta?</h2>
+        <p>Estamos aquí para ayudarte. Escríbenos al correo o visita la página de la sede.</p>
+      </div>
+      <div class="contacto-acciones">
+        <a href="mailto:cvargash@sena.edu.co?subject=Consulta%20Oferta%20Cultural%20SENA"
+           class="btn-contacto btn-email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Enviar correo
+        </a>
+        <a href="https://disenometrologia.blogspot.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-contacto btn-sede">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Página de la sede
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════ -->
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
@@ -373,15 +516,15 @@
           <ul>
             <li>Paloquemao</li>
             <li>Unihorizonte</li>
-            <li>Virtual</li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contacto</h4>
           <ul>
-            <li><a href="https://www.sena.edu.co" target="_blank" rel="noopener">www.sena.edu.co</a></li>
+            <li><a href="https://disenometrologia.blogspot.com/" target="_blank" rel="noopener">Centro de Diseño y Metrología</a></li>
+            <li><a href="mailto:cvargash@sena.edu.co">cvargash@sena.edu.co</a></li>
             <li>Bogotá, Colombia</li>
-            <li>&copy; 2025 SENA</li>
+            <li>&copy; 2026 SENA</li>
           </ul>
         </div>
       </div>
@@ -394,11 +537,12 @@
     </div>
   </footer>
 
-  <!-- ── JAVASCRIPT ───────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════
+       JAVASCRIPT
+       ══════════════════════════════════════════════ -->
   <script>
-    /* ── Scroll-reveal (IntersectionObserver) ── */
+    /* ── Scroll-reveal ── */
     const cards = document.querySelectorAll('.card');
-
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -407,11 +551,21 @@
         }
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
     cards.forEach(card => revealObserver.observe(card));
 
-    /* ── Ripple effect on inscription buttons ── */
-    document.querySelectorAll('.btn-inscripcion').forEach(btn => {
+    /* ── Ocultar placeholder si la imagen carga ── */
+    document.querySelectorAll('.card-img').forEach(img => {
+      img.addEventListener('load', () => {
+        if (img.src && img.src !== window.location.href) {
+          img.style.display = 'block';
+          const placeholder = img.closest('.card-image-slot').querySelector('.card-image-placeholder');
+          if (placeholder) placeholder.style.display = 'none';
+        }
+      });
+    });
+
+    /* ── Ripple en botones ── */
+    document.querySelectorAll('.btn-inscripcion:not(.btn-pending)').forEach(btn => {
       btn.addEventListener('click', function(e) {
         const ripple = document.createElement('span');
         ripple.classList.add('ripple-circle');
@@ -423,7 +577,7 @@
       });
     });
 
-    /* ── Filter buttons ── */
+    /* ── Filtros — sin sede virtual ── */
     const filterBtns = document.querySelectorAll('.filter-btn');
     const allCards   = document.querySelectorAll('.card');
 
@@ -431,28 +585,21 @@
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-
         const filter = btn.dataset.filter;
-
         allCards.forEach(card => {
           const match = filter === 'all' || card.dataset.sede === filter;
           card.style.display = match ? '' : 'none';
-
-          /* re-trigger animation for visible cards */
           if (match) {
             card.classList.remove('visible');
-            requestAnimationFrame(() => {
-              requestAnimationFrame(() => card.classList.add('visible'));
-            });
+            requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('visible')));
           }
         });
       });
     });
 
-    /* ── Subtle parallax on hero decorations ── */
+    /* ── Parallax en hero ── */
     const decA = document.querySelector('.hero-decoration.a');
     const decB = document.querySelector('.hero-decoration.b');
-
     document.addEventListener('mousemove', (e) => {
       const x = (e.clientX / window.innerWidth  - 0.5) * 30;
       const y = (e.clientY / window.innerHeight - 0.5) * 20;
