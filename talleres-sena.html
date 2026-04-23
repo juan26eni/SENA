@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talleres SENA — Oferta Cultural</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Styless.css">
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-mark">
+          <!-- Leaf SVG icon as SENA placeholder -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6 2 2 8 2 14c0 4 2.5 6.5 6 7.5C9 19 9.5 16 12 14c2.5 2 3 5 4 7.5C19.5 20.5 22 18 22 14c0-6-4-12-10-12z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span>SENA</span>
+          <small>Oferta Cultural</small>
+        </div>
+      </div>
+      <div class="header-badge">2026 — Inscripciones abiertas</div>
+    </div>
+  </header>
+
+  <!-- ── HERO ────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-decoration a"></div>
+    <div class="hero-decoration b"></div>
+    <div class="hero-eyebrow">Bienestar · Arte · Cultura</div>
+    <h1>Talleres SENA<br /><em>Oferta Cultural</em></h1>
+    <p class="hero-sub">
+      Explora, aprende y crece. Nuestros talleres están diseñados para potenciar tu desarrollo personal y artístico. ¡Inscríbete hoy!
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="num">9</span>
+        <span class="label">Talleres</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">3</span>
+        <span class="label">Sedes</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">100%</span>
+        <span class="label">Gratuito</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INFO BANNER ─────────────────────────────── -->
+  <div class="info-banner">
+    <div class="info-banner-inner">
+      <div class="info-banner-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div class="info-banner-text">
+        <h3>¿Cómo inscribirme?</h3>
+        <p>Haz clic en el botón <strong style="color:var(--c5)">"Inscribirse"</strong> de cada taller para acceder al formulario de Microsoft Forms correspondiente. Completa el formulario con tus datos y listo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FILTER BAR ──────────────────────────────── -->
+  <div class="filter-bar">
+    <span class="filter-label">Filtrar por sede:</span>
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="paloquemao">Paloquemao</button>
+    <button class="filter-btn" data-filter="unihorizonte">Unihorizonte</button>
+    <button class="filter-btn" data-filter="virtual">Virtual</button>
+  </div>
+
+  <!-- ── SECTION HEADER ──────────────────────────── -->
+  <div class="section-header">
+    <h2>Talleres disponibles</h2>
+    <p>Selecciona el taller de tu interés y completa el formulario de inscripción.</p>
+  </div>
+
+  <!-- ── MAIN CONTENT ────────────────────────────── -->
+  <main class="main-content">
+    <div class="cards-grid" id="cardsGrid">
+
+      <!-- Card 1: Grupo Teatro Paloquemao -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #728156">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Teatro
+          </div>
+          <h2>Grupo Teatro Paloquemao</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Lunes y miércoles de 12 a 2 pm</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Paloquemao</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_TEATRO_PALOQUEMAO" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2: Improvisación Teatral -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #88976C">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Teatro
+          </div>
+          <h2>Improvisación Teatral</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Viernes de 9 am a 11 am</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Paloquemao</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_IMPROVISACION" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3: Yoga -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #728156">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Bienestar
+          </div>
+          <h2>Yoga</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Martes de 9 am a 11 am</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Paloquemao</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_YOGA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4: Marionetas y Teatro Físico -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #88976C">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Teatro · Títeres
+          </div>
+          <h2>Marionetas y Teatro Físico</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Martes y jueves de 4 pm a 6 pm</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Paloquemao</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_MARIONETAS_TEATRO" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5: Marionetas -->
+      <article class="card" data-sede="unihorizonte" style="--card-color: #728156">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Títeres
+          </div>
+          <h2>Marionetas</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Lunes y miércoles de 5 pm a 6 pm</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Unihorizonte</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_MARIONETAS" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 6: Escritura Creativa -->
+      <article class="card" data-sede="virtual" style="--card-color: #88976C">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Virtual · Escritura
+          </div>
+          <h2>Escritura Creativa</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Martes y jueves de 9 am a 11 am</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <span><span class="meta-label">Modalidad:</span>Virtual</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_ESCRITURA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 7: Cine y Audiovisuales -->
+      <article class="card" data-sede="unihorizonte" style="--card-color: #728156">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Cine · Audiovisual
+          </div>
+          <h2>Cine y Audiovisuales</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Lunes y miércoles de 1 pm a 3 pm</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Unihorizonte</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_CINE" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 8: Danza Urbana -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #88976C">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Danza
+          </div>
+          <h2>Danza Urbana</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Martes, jueves y viernes de 2 a 5 pm</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Paloquemao</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_DANZA_URBANA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 9: Danza Folclórica -->
+      <article class="card" data-sede="paloquemao" style="--card-color: #728156">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-category">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Danza
+          </div>
+          <h2>Danza Folclórica</h2>
+          <div class="card-meta">
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <span><span class="meta-label">Horario:</span>Miércoles de 2 a 3 pm</span>
+            </div>
+            <div class="meta-row">
+              <div class="meta-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span><span class="meta-label">Sede:</span>Paloquemao</span>
+            </div>
+          </div>
+          <a href="URL_FORMS_DANZA_FOLCLORICA" target="_blank" rel="noopener noreferrer" class="btn-inscripcion">
+            Inscribirse
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /.cards-grid -->
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span>SENA — Oferta Cultural</span>
+          <p>Servicio Nacional de Aprendizaje. Comprometidos con el desarrollo humano integral a través del arte, la cultura y el bienestar.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sedes</h4>
+          <ul>
+            <li>Paloquemao</li>
+            <li>Unihorizonte</li>
+            <li>Virtual</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://www.sena.edu.co" target="_blank" rel="noopener">www.sena.edu.co</a></li>
+            <li>Bogotá, Colombia</li>
+            <li>&copy; 2025 SENA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Todos los talleres son gratuitos y están sujetos a disponibilidad de cupos.</p>
+        <div class="footer-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── JAVASCRIPT ───────────────────────────────── -->
+  <script>
+    /* ── Scroll-reveal (IntersectionObserver) ── */
+    const cards = document.querySelectorAll('.card');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    cards.forEach(card => revealObserver.observe(card));
+
+    /* ── Ripple effect on inscription buttons ── */
+    document.querySelectorAll('.btn-inscripcion').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple-circle');
+        const rect = this.getBoundingClientRect();
+        ripple.style.left = (e.clientX - rect.left) + 'px';
+        ripple.style.top  = (e.clientY - rect.top)  + 'px';
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 700);
+      });
+    });
+
+    /* ── Filter buttons ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const allCards   = document.querySelectorAll('.card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        allCards.forEach(card => {
+          const match = filter === 'all' || card.dataset.sede === filter;
+          card.style.display = match ? '' : 'none';
+
+          /* re-trigger animation for visible cards */
+          if (match) {
+            card.classList.remove('visible');
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => card.classList.add('visible'));
+            });
+          }
+        });
+      });
+    });
+
+    /* ── Subtle parallax on hero decorations ── */
+    const decA = document.querySelector('.hero-decoration.a');
+    const decB = document.querySelector('.hero-decoration.b');
+
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth  - 0.5) * 30;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      if (decA) decA.style.transform = `translate(${x * 0.4}px, ${y * 0.4}px)`;
+      if (decB) decB.style.transform = `translate(${-x * 0.3}px, ${-y * 0.3}px)`;
+    });
+  </script>
+</body>
+</html>
