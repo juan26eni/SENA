@@ -84,11 +84,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  background: var(--c5);
-  overflow: hidden;
   flex-shrink: 0;
-  border: 1.5px solid var(--c3);
   position: relative;
 }
 
