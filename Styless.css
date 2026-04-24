@@ -684,16 +684,65 @@ footer {
 .footer-dots span:nth-child(2) { opacity: 0.7; }
 
 /* ════════════════════════════════════════════════
-   BREAKPOINTS
+   BREAKPOINTS — Mobile-first responsive
    ════════════════════════════════════════════════ */
+
+/* ── Pantallas muy pequeñas (< 360px) ── */
+@media (max-width: 359px) {
+  .header-brand-title { font-size: 1.05rem; }
+  .header-brand-sub   { display: none; }
+  .header-badge       { display: none; }
+  .logo-slot          { width: 48px; height: 44px; }
+  .hero h1            { font-size: 1.9rem; }
+  .filter-btn         { font-size: 0.75rem; padding: 0 12px; min-height: 40px; }
+}
+
+/* ── Móvil pequeño (< 480px) — badge compacto ── */
+@media (max-width: 479px) {
+  /* Header: ocultar el badge en pantallas muy ajustadas */
+  .header-badge { 
+    font-size: 0.62rem;
+    padding: 5px 10px 5px 8px;
+    letter-spacing: 0.04em;
+  }
+  /* Reducir el "2026 — Inscripciones abiertas" a solo el dot + año */
+  .header-badge::before { content: ''; }
+
+  /* Info banner: botón al ancho completo en móvil */
+  .info-banner-inner  { flex-direction: column; align-items: stretch; }
+  .btn-whatsapp       { width: 100%; justify-content: center; }
+
+  /* Filtros: ocultar label para dar más espacio a los botones */
+  .filter-label { display: none; }
+
+  /* Contacto: botones apilados y a ancho completo */
+  .contacto-acciones  { flex-direction: column; }
+  .btn-contacto       { width: 100%; justify-content: center; }
+
+  /* Footer bottom: apilar en lugar de row */
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* ── 480px ── */
 @media (min-width: 480px) {
   :root { --px: 1.25rem; }
   .hero { padding: 70px var(--px) 64px; }
   .section-header { flex-direction: row; align-items: flex-end; justify-content: space-between; }
   .section-header p { text-align: right; max-width: 260px; }
   .requisitos-grid { grid-template-columns: 1fr 1fr; }
+  /* Info banner: icono + texto en fila, botón debajo */
+  .info-banner-inner  { flex-wrap: wrap; }
+  .btn-whatsapp       { width: 100%; justify-content: center; flex-shrink: 1; }
 }
 
+/* ── 560px: botón WhatsApp vuelve a su tamaño natural ── */
+@media (min-width: 560px) {
+  .btn-whatsapp { width: auto; justify-content: initial; flex-shrink: 0; }
+  .btn-contacto { width: auto; justify-content: initial; }
+  .contacto-acciones { flex-direction: row; flex-wrap: wrap; }
+}
+
+/* ── 640px ── */
 @media (min-width: 640px) {
   :root { --px: 1.5rem; }
   .header-inner { height: 72px; }
@@ -704,8 +753,11 @@ footer {
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-brand { grid-column: 1 / -1; }
   .contacto-inner { flex-direction: row; align-items: center; justify-content: space-between; }
+  .filter-label { display: inline; } /* restaurar label de filtros */
+  .footer-bottom { flex-direction: row; align-items: center; }
 }
 
+/* ── 768px ── */
 @media (min-width: 768px) {
   :root { --px: 2rem; }
   .header-inner { height: 76px; }
@@ -713,21 +765,35 @@ footer {
   .logos-bar { gap: 20px; }
   .hero { padding: 90px var(--px) 80px; }
   .requisitos-grid { grid-template-columns: repeat(3, 1fr); }
-  .info-banner-inner { padding: 2rem 2.5rem; gap: 2rem; }
+  .info-banner-inner { padding: 2rem 2.5rem; gap: 2rem; flex-wrap: nowrap; }
   .section-header { margin-bottom: 1.5rem; }
   .footer-top { grid-template-columns: 2fr 1fr 1fr; gap: 3rem; }
   .footer-brand { grid-column: auto; }
   .card-image-slot { height: 160px; }
 }
 
+/* ── 1024px ── */
 @media (min-width: 1024px) {
   .cards-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .main-content { padding-bottom: 6rem; }
   .card-body { padding: 1.6rem 1.8rem 1.4rem; }
+  .card-image-slot { height: 180px; }
 }
 
+/* ── 1280px ── */
 @media (min-width: 1280px) {
   :root { --px: 2.5rem; }
+  .card-image-slot { height: 200px; }
+}
+
+/* ── Touch / dispositivos táctiles: áreas de toque mínimas ── */
+@media (hover: none) and (pointer: coarse) {
+  .filter-btn   { min-height: 48px; }
+  .btn-contacto { min-height: 52px; }
+  .btn-whatsapp { min-height: 52px; }
+  .btn-inscripcion { min-height: 52px; }
+  /* Deshabilitar parallax (usa mousemove, no funciona en touch) */
+  .hero-decoration { transition: none !important; }
 }
 
 /* ════════════════════════════════════════════════
